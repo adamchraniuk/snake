@@ -179,10 +179,10 @@ var waz = function () {
         40: "dol"
     };
 
-    $("body").keydown(function (zdarzenie) {
-        var nowyKierunek = kierunki[zdarzenie.keyCode];
-        if (nowyKierunek !== undefined){
-            waz.ustawKierunek(nowyKierunek);
-        }
+$("body").keydown(function (zdarzenie) {
+    var nowyKierunek = kierunki[zdarzenie.keyCode];
+    if (nowyKierunek !== undefined){
+        waz.ustawKierunek(nowyKierunek);
+    }
 
-    });
+});
