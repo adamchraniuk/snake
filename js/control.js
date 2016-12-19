@@ -4,7 +4,7 @@ var x = 0, y = 0,
     vx = 0, vy = 0,
     ax = 0, ay = 0;
 
-var glowa = document.getElementById("sphere");
+var sphere = document.getElementById("sphere");
 
 if (window.DeviceMotionEvent != undefined) {
     window.ondevicemotion = function(e) {
@@ -37,8 +37,8 @@ if (window.DeviceMotionEvent != undefined) {
 
         boundingBoxCheck();
 
-        glowa.style.top = y + "px";
-        glowa.style.left = x + "px";
+        sphere.style.top = y + "px";
+        sphere.style.left = x + "px";
 
     }, 25);
 }
