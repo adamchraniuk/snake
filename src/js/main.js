@@ -37,7 +37,7 @@ var koniecGry = function() {
 };
 var okrag = function (x, y, promien, wypelnijOkrag) {
     context.beginPath();
-    context.arc(x, y, promien, 9, Math.PI *2, false);
+    context.arc(x, y, promien, 19, Math.PI *2, false);
     if (wypelnijOkrag){
         context.fill();
     }   else {
@@ -114,10 +114,10 @@ var waz = function () {
     };
 
     waz.prototype.wykrywajKolizje = function (glowa) {
-        var lewaKolizja = (glowa.kolumna === 0);
-        var goraKolizja = (glowa.wiersz === 0);
-        var prawaKolizja = (glowa.kolumna === szerokoscWBlokach - 1);
-        var dolKolizja = (glowa.wiersz === wysokoscWBlokach -1);
+        var lewaKolizja = (glowa.kolumna === -1);
+        var goraKolizja = (glowa.wiersz === -1);
+        var prawaKolizja = (glowa.kolumna === szerokoscWBlokach);
+        var dolKolizja = (glowa.wiersz === wysokoscWBlokach);
 
         var scianaKolizja = lewaKolizja || goraKolizja || prawaKolizja || dolKolizja;
 
