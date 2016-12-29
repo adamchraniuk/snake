@@ -178,30 +178,30 @@ var waz = function () {
         "39": "prawa",
         "40": "dol"
     };
-
-    var btnUp = $('#up'),
-        btnRight = $('#right'),
-        btnDown = $('#down'),
-        btnLeft = $('#left');
-
-    btnUp.on('click', function(e) {
-       var value = $(this).attr('data-value');
-    });
-    btnDown.on('click', function(e) {
-        var value = $(this).attr('data-value');
-
-    });
-    btnLeft.on('click', function(e) {
-
-    });
-    btnRight.on('click', function(e) {
-
-    });
-$("body").on('keydown', function(e) {
-        console.log('this:', e.which);
-        // var nowyKierunek = kierunki[zdarzenie.keyCode];
-        // if (nowyKierunek !== undefined){
-        //     waz.ustawKierunek(nowyKierunek);
-        // }
+    //
+    // var btnUp = $('#up'),
+    //     btnRight = $('#right'),
+    //     btnDown = $('#down'),
+    //     btnLeft = $('#left');
+    //
+    // btnUp.on('click', function(e) {
+    //    var value = $(this).attr('data-value');
+    // });
+    // btnDown.on('click', function(e) {
+    //     var value = $(this).attr('data-value');
+    //
+    // });
+    // btnLeft.on('click', function(e) {
+    //
+    // });
+    // btnRight.on('click', function(e) {
+    //
+    // });
+$("body").on('keydown', function(zdarzenie) {
+        // console.log('this:', e.which);
+        var nowyKierunek = kierunki[zdarzenie.keyCode];
+        if (nowyKierunek !== undefined){
+            waz.ustawKierunek(nowyKierunek);
+        }
 
         });
