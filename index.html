@@ -16,24 +16,36 @@
     </head>
     <body>
         <div id="content">
-        <div id="sphere"">
+        <div id="waz"">
         </div>
         </div>
         <div>
             <h1 style=font-size:50px;> WONSZ</h1>
             <canvas id="canvas" width="400" height="400"></canvas>
         </div>
-            <div>
-            <button id="repley">
-                Od nowa
+        <div class="arrows">
+            <div class="up">
+            <button id="up" type="button" onclick="" data-value="cos cos">
+                UP
+            </button>
+            </div>
+        <div class="down">
+            <button id="right" type="button">
+                RIGHT
+            </button>
+            <button id="down" type="button" data-value="cos cos nic">
+                DOWN
+            </button>
+            <button id="left" type="button">
+                LEFT
             </button>
         </div>
-
+        </div>
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/control.js"></script>
+        <!--<script src="js/control.js"></script>-->
 
     </body>
 </html>

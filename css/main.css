@@ -281,11 +281,11 @@ textarea {
 }
 #content{
     border: 2px solid black;
-    width: 500px;
-    height: 500px;
-    display: block;
+    width: 320px;
+    height: 100px;
+    display: none;
 }
-#sphere {
+#waz {
     position: absolute;
     top: 500px;
     width: 50px;
@@ -293,4 +293,19 @@ textarea {
     border-radius: 50px;
     -webkit-radius: 50px;
     background-color: blue;
+}
+#up{
+    width: 59px;
+    margin-left: 62px;
+}
+.up{
+    display: block;
+    /*float: right;*/
+}
+.down{
+    display: inline-block;
+}
+.arrows{
+    display: block;
+    margin-left: 100px;
 }
